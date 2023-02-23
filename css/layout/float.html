@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float</title>
+  <link rel="stylesheet" href="../common.css">
+  <style>
+    body {
+      background: #eee;
+      font-family: Helvetica, Arial, Helvetica, sans-serif;
+    }
+
+    /* 双容器模式 */
+    .wrapper {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+
+    /* 同期折叠和清除浮动 */
+
+    .header {
+      padding: 1em 1.5em;
+      color: #fff;
+      background-color: #0072b0;
+      border-radius: .5em;
+      margin-bottom: 1.5em;
+    }
+
+    .main {
+      padding: 0 1.5em;
+      background-color: #fff;
+      border-radius: .5em;
+    }
+
+    .col {
+      float: left;
+      margin: 0 1.5em 1.5em 0;
+      width: calc(50% - 1.5em);
+      padding: 1.5em;
+      background-color: #eee;
+      border-radius: 0.5em;
+    }
+
+    .col:nth-child(odd) {
+      clear: left;
+    }
+
+    .col>img {
+      width: 100px;
+      height: auto;
+      float: left;
+      margin-right: 1.5em;
+    }
+
+    .sub-content {
+      /* 删除猫头鹰选择器所添加的顶部外边距 */
+      margin-top: 0;
+      overflow: auto;
+      margin-top: 0;
+    }
+
+    .sub-content-title {
+      font-weight: 700;
+    }
+
+    .clearfix::before,
+    .clearfix::after {
+      display: table;
+      content: "";
+    }
+
+    .clearfix::after {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">读书俱乐部</header>
+    <main class="main clearfix">
+      <h2 class="title">活动提示</h2>
+      <div class="content">
+        <div class="col">
+          <img src="../../cat.png" alt="">
+          <div class="sub-content">
+            <div class="sub-content-title">英语角</div>
+            <div class="sub-content-tip">这是英语相关的周刊与教辅，出国交流用书书籍，方便查阅</div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="../../cat.png" alt="">
+          <div class="sub-content">
+            <div class="sub-content-title">科学角</div>
+            <div class="sub-content-tip">你知道科学的尽头是什么？我们一直在探索自然界中存在的但是所未知的带发觉的科学世界</div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="../../cat.png" alt="">
+          <div class="sub-content">
+            <div class="sub-content-title">日语角</div>
+            <div class="sub-content-tip">富士山如何？日本美食如何？樱花如何？</div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="../../cat.png" alt="">
+          <div class="sub-content">
+            <div class="sub-content-title">汉语角</div>
+            <div class="sub-content-tip">我们的文化自信来自哪里？是传承么？</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webgl 测试代码</title>
+  <style>
+    :root {
+      --primary-color: #388cff;
+      --error-color: orange;
+      --white-color: #fff;
+    }
+
+
+
+    .dark {
+      padding: 32px;
+      background: #999;
+      --primary-color: green;
+      --white-color: red;
+    }
+
+    .pink {
+      padding: 32px;
+      background: pink;
+      --primary-color: orange;
+      --white-color: yellow;
+    }
+
+    .panel {
+
+      height: 42px;
+      width: 50vw;
+      background: var(--primary-color);
+      color: var(--white-color);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="panel">这是一段文字</div>
+  <div class="dark">
+    <div class="panel">这是一段文字</div>
+  </div>
+  <div class="pink">
+    <div class="panel">这是一段文字</div>
+  </div>
+  <div class="box">
+    <div class="sub-box">测试自定义样式属性</div>
+  </div>
+
+
+  <div class="padd">test em 相对单位，基准为16px</div>
+
+  <script>
+    // 获取自定义属性变量的Js 方法，也可以对其进行更改
+    var rootEle = document.documentElement;
+    console.log(rootEle)
+    rootEle.style.setProperty('--primary-color', 'orange')
+    // var styles = getComputedStyle(rootEle);
+    // styles.setProperty('--primary-color', 'orange');
+    // var mainColor = styles.getPropertyValue('--primary-color');
+    // mainColor = 'orange';
+    // console.log(mainColor.trim())
+  </script>
+</body>
+
+</html>

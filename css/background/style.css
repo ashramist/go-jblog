@@ -1,0 +1,58 @@
+:root {
+  /* 灰色 */
+  --color-gray: #868e96;
+  /* 浅灰色 */
+  --color-light-gray: #f1f3f5;
+
+  /* 超浅灰色 */
+  --color-extra-ligth-gray: #f8f9fa;
+  /* 白色 */
+  --color-white: #fff;
+
+  /* 品牌绿 */
+  --color-brand-green: #076448;
+
+  /* 深绿色 */
+  --color-dark-green: #099268;
+
+  /* 中绿色 */
+  --color-medium-green: #20c997;
+
+  /* 文本颜色 */
+  --color-text-color: #212529;
+
+  box-sizing: border-box;
+  color: var(--color-text-color);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* 双容器模式 */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background: var(--color-extra-ligth-gray);
+}
+
+/* 设置标题字体 */
+h1,
+h2,
+h3,
+h4 {
+  font-family: Georgia, serif;
+}
+
+a {
+  color: var(--color-medium-green);
+}
+
+a:visited,
+a:hover,
+a:active {
+  color: var(--color-brand-green);
+}

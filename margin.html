@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>负外边距</title>
+  <style>
+    :root {
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: inherit;
+    }
+
+    .wrapper {
+      /* display: flex;
+      align-items: center; */
+    }
+
+    .box {
+      background: #388cff;
+      color: #fff;
+      /* width: 200px; */
+      height: 200px;
+      margin: 1.25em;
+      padding: 1em;
+      border: 1px solid orchid
+    }
+
+    .box1 {
+      background: yellow;
+      margin-bottom: 50px;
+    }
+
+    .box2 {
+      margin-top: 60px;
+      background: orange;
+    }
+
+    .box3 {
+      background: pink;
+    }
+
+    .box4 {
+      background: purple;
+    }
+
+    .box5 {
+      background: green;
+    }
+
+    .box6 {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+  </div>
+  <!-- <div class="box box6">2</div> -->
+
+
+</body>
+
+</html>

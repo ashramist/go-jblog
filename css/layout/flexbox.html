@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox</title>
+  <link rel="stylesheet" href="../common.css">
+  <style>
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    header {}
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #5f4b44;
+    }
+
+    .nav-wrapper li {
+      margin-top: 0;
+    }
+
+    .nav-wrapper li a {
+      background: #cc6b5a;
+      color: white;
+    }
+
+
+    .nav-wrapper_left {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>Ink</header>
+    <nav class="nav-wrapper">
+      <ul class="nav-wrapper_left">
+        <li><a href="/home">首页</a></li>
+        <li><a href="/home">特色</a></li>
+        <li><a href="/home">价格</a></li>
+        <li><a href="/home">支持</a></li>
+      </ul>
+      <ul class="nav-wrapper_right">
+        <li><a href="/home">关于</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <div class="content_left"></div>
+      <div class="content_right"></div>
+    </main>
+  </div>
+</body>
+
+</html>

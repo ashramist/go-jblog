@@ -1,0 +1,91 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* 猫头鹰选择器 */
+body *+* {
+  margin-top: 1.5em;
+}
+
+[class="column-*"] {
+  float: left;
+}
+
+.column-1 {
+  width: 8.33333%;
+}
+
+.column-2 {
+  width: 16.6667%;
+}
+
+.column-3 {
+  width: 25%;
+}
+
+.column-4 {
+  width: 33.33333%;
+}
+
+.column-5 {
+  width: 41.6665%;
+}
+
+.column-6 {
+  width: 8.33333%;
+}
+
+.column-7 {
+  width: 58.3331%;
+}
+
+.column-8 {
+  width: 66.6664%;
+}
+
+.column-9 {
+  width: 75%;
+}
+
+.column-10 {
+  width: 83.33333%;
+}
+
+.column-11 {
+  width: 91.6667%;
+}
+
+.column-12 {
+  width: 100%;
+}
+
+.message {
+  padding: 0.8em 1.2em;
+  border-radius: 0.2em;
+  border: 1px solid #265559;
+  color: #265559;
+  background-color: #e0f0f2;
+  ;
+}
+
+/*.modifiers 实现不同类型的消息提示样式更改 */
+.message--success {
+  color: #2f5926;
+  border-color: #2f5926;
+  background-color: #cfe8c9;
+}

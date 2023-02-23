@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --global-border-radius: 0.25em;
+    }
+
+    body *+* {
+      margin-bottom: 1.5em;
+    }
+
+    body {
+      font-size: 16px;
+      padding: 10px;
+      background: #999;
+    }
+
+    .header {
+      width: 100%;
+      border-radius: var(--global-border-radius);
+      padding: 0 20px;
+      box-sizing: border-box;
+      height: 60px;
+      font-size: 30px;
+      line-height: 2;
+      color: #fff;
+      background-color: #388cff;
+    }
+
+    .wrapper {
+      margin: 0 -1.5em;
+    }
+
+    .container {
+      margin-top: 10px;
+      display: table;
+      width: 100%;
+      border-spacing: 1.5em 0;
+    }
+
+    .container>.main {
+      display: table-cell;
+      width: 70%;
+      border-radius: var(--global-border-radius);
+      background: #fff;
+      padding: 1em;
+    }
+
+    .container>.slider {
+      display: table-cell;
+      width: 30%;
+      font-size: 16px;
+
+      border-radius: var(--global-border-radius);
+      padding: 1em;
+      background: #fff;
+    }
+
+    .row {
+      width: 100%;
+
+    }
+
+    .row>img {
+      width: 200px;
+      height: auto;
+    }
+
+    .row>span {
+      vertical-align: middle;
+    }
+
+    .slider ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 1em;
+      display: block;
+      background: #388cff;
+      padding: 1em;
+      color: #fff;
+    }
+
+    .sticky-height {
+      margin: 20px 0;
+      height: 46px;
+      background: #388cff;
+      color: #fff;
+      font-size: 23px;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0 .5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    /* .container {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .container>.main {
+      flex: 1;
+      background: #fff;
+      border-radius: 0.25em;
+      padding-left: 20px;
+    }
+
+    .container>.slider {
+      margin-left: 20px;
+      width: 200px;
+      background: #fff;
+      border-radius: 0.25em;
+    } */
+  </style>
+</head>
+
+<body>
+  <!-- css flexbox 布局实现等高列 -->
+  <header class="header">抖音直播变现俱乐部</header>
+  <div class="wrapper">
+    <div class="container">
+      <main class="main">
+        <aside>
+          <h3>快来加入我们</h3>
+          <p>我们是一个教你快速成长变现的</p>
+          <p>固定高度-垂直居中</p>
+          <div class="sticky-height">
+            我是固定高度，垂直居中效果展示
+          </div>
+          <div class="row">
+            <img src="./cat.png" alt="">
+            <span> 测试居中</span>
+            <span> 测试居中</span>
+          </div>
+        </aside>
+      </main>
+      <aside class="slider">
+        <ul>
+          <li>添加微信</li>
+          <li>添加QQ</li>
+          <li>添加钉钉</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

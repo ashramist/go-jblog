@@ -1,0 +1,73 @@
+.fade {
+  width: 400px;
+  height: 200px;
+  background-image: linear-gradient(0deg, white, blue);
+}
+
+.tiaowen {
+  width: 400px;
+  height: 200px;
+  background-image: linear-gradient(90deg, red 40%, white 40%, white 60%, blue 60%);
+}
+
+/* 扁平化按钮样式设计 */
+.button {
+  margin-top: 20px;
+  padding: 1em;
+  border: 0;
+  font-size: 0.8rem;
+  color: white;
+  border-radius: 0.5em;
+  background-color: #57b;
+  box-shadow: 0 0.2em 0.2em rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #456ab6;
+}
+
+.button:active {
+  background: #148;
+}
+
+.n-button {
+  border-radius: 0.5em;
+  padding: 0.8em;
+  border: 0;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #57b;
+  box-shadow: 0 0.5em #148;
+  text-shadow: 1px 1px #148;
+  cursor: pointer;
+}
+
+.n-button:active {
+  background-color: #456ab6;
+  /* 点击按钮下移 */
+  transform: translateY(0.1em);
+  /* 减小阴影的大小，用来抵消按钮的位移 */
+  box-shadow: 0 0.3em #148;
+}
+
+/*  */
+.blend-mode-bg {
+  margin-top: 10px;
+  background-image: url("https://pic.ntimg.cn/file/20160326/6470615_091422665000_2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5em 10em;
+}
+
+.blend-mode-bg>h1 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6rem;
+  text-align: center;
+  mix-blend-mode: hard-light;
+  background-color: #c33;
+  color: #808080;
+  border: 0.1em solid #ccc;
+  border-width: 0.1em 0;
+}
